@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        gaming hub
+    </title>
+
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1">
+          <link rel="icon" type="image/png" href="on.png"/>
+
+
+
+
+</head>
+
+<body>
+    <div class="background"></div>
+    <img src="gaming.jpg" alt="bird-img" class="bird" id="bird-1">
+<style>
+    * {
+    box-sizing: border-box;
+}
+
+/* padding for whole body */
+body {
+    padding: 15px;
+}
+
+/* styling body */
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1 {
+    color: white;
+}
+
+/* anchor tag decoration */
+a {
+    text-decoration: none;
+    color: #5673C8;
+}
+
+a:hover {
+    color: lightblue;
+}
+
+/* paragraph tag decoration */
+p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    
+    overflow: hidden;
+}
+
+/* row and column decoration */
+.row {
+    margin: 0px -18px;
+    padding: 10px;
+}
+
+.row>.column {
+    padding: 15px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    position: relative; /* Add position relative */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.column:hover {
+    width: 25%;
+    top: -20px; /* Move up on hover */
+    box-shadow: 0 14px 8px rgba(15, 192, 15, 0.5); /* Add box shadow on hover */
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* content decoration */
+.content {
+    float:center
+    background-color: white;
+    padding : 10px;
+    border : 3px solid grey;
+}
+
+/* window size 850 width set */
+@media screen and (max-width: 850px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* window size 400 width set */
+@media screen and (max-width: 400px) {
+    .column {
+        width: 100%;
+    }
+}
+.title {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 15%;
+    background-color: rgb(2, 0, 128);
+}
+
+
+</style>
+    <!-- title and tag -->
+<div class="title"><h1>GAMING HUB</h1></div>
+    <div class="container">
+        <hr>
+
+        <!-- Content of the body-->
+       
+        <div class="row">
+            <div class="column">
+                <div class="content">
+                    <img src=
+"game.jpg" 
+                         alt="" style="width:100%">
+                    <h3>
+                        <a href="tic.html">TIC TAC TOE </a>
+                    </h3>
+                    
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="content">
+                    <img src=
+"mirror.jpg" 
+                         alt="" style="width:100%">
+                    <h3>
+                        <a href="brick.html">Brick Breaker</a>
+                    </h3>
+                    
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="content">
+                    <img src="pipe.png" alt="" style="width:100%">
+                    <h3>
+                        <a href="index.html">FLAPPY BIRD</a>
+                    </h3>
+
+                   
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="content">
+                    <img src=
+"snake2.png" 
+                         alt="" style="width:100%">
+                    <h3>
+                        <a href="snake.html">SNAKE GAME</a>
+                    </h3>
+                  
+                </div>
+        </div>
+    </div>
+</body>
+</html>
